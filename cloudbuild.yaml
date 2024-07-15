@@ -4,9 +4,9 @@ steps:
       [
         "build",
         "-t",
-        "gcr.io/$PROJECT_ID/stackedit:$SHORT_SHA",
+        "us-central1-docker.pkg.dev/$PROJECT_ID/fulstech/$REPO_NAME:$SHORT_SHA",
         ".",
       ]
 images:
-  - "gcr.io/$PROJECT_ID/stackedit:$SHORT_SHA"
+  - "us-central1-docker.pkg.dev/$PROJECT_ID/fulstech/$REPO_NAME:$SHORT_SHA"
 timeout: 900s
